@@ -10,7 +10,7 @@ main {
 section {
   width: 40%;
   height: 90%;
-  background-color:white;
+  background-color:greenyellow;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
