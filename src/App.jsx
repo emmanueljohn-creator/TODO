@@ -52,7 +52,7 @@ function App() {
             />
 
             
-            <button onClick={addTodo}>Add</button>
+            <button onClick={addTodo}>Adds</button>
           </div>
 
           <div className="item-container">
