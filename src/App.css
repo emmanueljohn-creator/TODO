@@ -1,0 +1,176 @@
+main {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(#0f2027, #203a43, #2c5364);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  width: 40%;
+  height: 90%;
+  background-color: white;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 1s ease;
+}
+
+h2 {
+  color: #203a43;
+}
+
+.inputHolder {
+  width: 95%;
+  height: 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input {
+  width: 80%;
+  height: 100%;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  border-radius: 6px;
+  padding: 10px;
+  outline: none;
+}
+
+button {
+  width: 20%;
+  height: 100%;
+  border: none;
+  background: linear-gradient(135deg, #00c896, #00a67d);
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #00a67d, #007a5c);
+}
+
+.item-container {
+  width: 95%;
+  height: 75%;
+  background-color: #f1f5f9;
+  margin-top: 20px;
+  border-radius: 8px;
+  padding: 15px;
+  overflow-y: auto;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  animation: money 1s;
+}
+
+li {
+  background: white;
+  padding: 12px 15px;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: 0.2s;
+  animation: money 1s forwards;
+}
+li div {
+  display: flex;
+  gap: 8px;
+}
+
+.edit-btn {
+  background: #3498db;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: auto;
+  height: auto;
+}
+
+.edit-btn:hover {
+  background: #1f78b4;
+}
+
+
+.delete-btn {
+  background: crimson;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: auto;
+  height: auto;
+}
+
+.delete-btn:hover {
+  background: darkred;
+}
+
+@keyframes money {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    width: 90%;
+    height: 90%;
+  }
+
+  .inputHolder {
+    flex-direction: column;
+    gap: 10px;
+    height: auto;
+  }
+
+  input {
+    width: 100%;
+    height: 45px;
+  }
+
+  button {
+    width: 100%;
+    height: 45px;
+  }
+}
